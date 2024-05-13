@@ -1,0 +1,18 @@
+body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(38, 17, 233);
+    }
+ 
+    .box {
+        width: 80%;
+        height: 80%;
+        background-color: rgb(147, 181, 234);
+        padding: 20px;
+        border: 20px solid rgb(234, 71, 17);
+        outline: 20px solid rgb(223, 243, 144);
+        margin: 20px;
+    }
