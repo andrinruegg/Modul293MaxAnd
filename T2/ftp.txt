@@ -1,0 +1,7 @@
+ftp
+open max.bplaced.net
+max
+Hokage7.0
+binary
+put ftp.txt
+bye
