@@ -1,1 +1,0 @@
-## Übung 3 - HTML-Struktur für einen Blog
