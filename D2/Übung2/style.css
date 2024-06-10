@@ -13,7 +13,13 @@
 }
 
 
-
+.input-container .fas.fa-microphone {
+    position: absolute;
+    right: 10px;
+    color: #555;
+    cursor: pointer;
+ 
+}
 
 .buttons {
     margin-left: 43%;
@@ -26,6 +32,7 @@
     width: 60%;
     length: 50%;
     padding: 1%;
+    padding-right: 40px; 
 }
 
 .footer {
@@ -56,12 +63,32 @@
         border-color: rgb(78, 3, 3);
         border-radius: 6%;
         color: white;
-        font-size: 20px;
+        font-size: 11px;
         font-weight: bold;
-        padding: 1%;
-        width: 8%;
+        padding: 0.5%;
+        width: 5%;
         position: absolute;
-        top: 5%;
+        top: 6%;
         right: 5%;
+        cursor: pointer;
+      
+    }
+    .dots {
+        width:1.5%;
+        position:absolute;
+        top: 6.3%;
+        right: 11%;
+        }
+}
+
+.header-content {
+    display: flex;
+    justify-content: middle;
+    margin-left: 50%;
+    position: absolute;
+        top: 5%;
+        right: 16%;
+    p:hover {
+        color: rgb(3, 3, 75);
     }
 }
