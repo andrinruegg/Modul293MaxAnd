@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: px;
+        background-color: #ffffff;
+        padding: 5px;
+      }
+
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgb(255, 255, 255);
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Movie Library</h1>
+
+    <h3>Here are our 4 favourite movies.</h3>
+
+    <div class="grid-container">
+      <div>
+        <img src="movie1.jpg" alt="Percy Jackson" width="200" height="300" />
+      </div>
+
+      <div>
+        <img src="movie2.jpg" alt="Avengers" width="200" height="300" />
+      </div>
+
+      <div>
+        <img src="movie3.jpg" alt="Cars" width="200" height="300" />
+      </div>
+
+      <div>
+        <img src="movie4.jpg" alt="Kung Fu Panda" width="200" height="300" />
+      </div>
+    </div>
+  </body>
+</html>
