@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Übung 2</title>
+  </head>
+  <body>
+    <label for="dino-select">Which dinosaur do you want to be:</label>
+    <select id="dino-select">
+      <optgroup label="Theropods">
+        <option>Tyrannosaurus</option>
+        <option>Velociraptor</option>
+        <option>Deinonychus</option>
+      </optgroup>
+      <optgroup label="Sauropods">
+        <option>Diplodocus</option>
+        <option>Saltasaurus</option>
+        <option>Apatosaurus</option>
+      </optgroup>
+    </select>
+    <br />
+    <br />
+    <form>
+      <fieldset class="label">
+        <legend>Which of these dinosaurs is your favourite?</legend>
+
+        <input type="radio" id="tyrannosaurus" name="dino" value="K" />
+        <label for="tyrannosaurus">Tyrannosaurus</label><br />
+
+        <input type="radio" id="saltasaurus" name="dino" value="S" />
+        <label for="saltasaurus">Saltasaurus</label><br />
+
+        <input type="radio" id="velociraptor" name="dino" value="M" />
+        <label for="velociraptor">Velociraptor</label>
+      </fieldset>
+    </form>
+  </body>
+</html>
