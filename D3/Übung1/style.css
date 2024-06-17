@@ -1,0 +1,12 @@
+.centermiddle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.photos{
+    display: inline-block;
+    width: 20%;
+
+}
