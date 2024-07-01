@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-01T07:03:38.547Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="i5UhJo8WyKBCzPpGP5yK" version="24.6.2" type="device">
+<mxfile host="app.diagrams.net" modified="2024-07-01T08:25:19.535Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="m100IjoHL9Awu3sJI4ws" version="24.6.2" type="device">
   <diagram name="Page-1" id="03018318-947c-dd8e-b7a3-06fadd420f32">
-    <mxGraphModel dx="1902" dy="1725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="2060" dy="1798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -148,13 +148,13 @@
         <mxCell id="FqUW4puc8MzxNFa7fC7m-1" value="Quick Links" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
           <mxGeometry x="520" y="699.5" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="FqUW4puc8MzxNFa7fC7m-2" value="Home&lt;div&gt;Cartpage&lt;/div&gt;&lt;div&gt;Login&lt;/div&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+        <mxCell id="FqUW4puc8MzxNFa7fC7m-2" value="Home&lt;div&gt;Cartpage&lt;/div&gt;&lt;div&gt;About Us&lt;/div&gt;&lt;div&gt;Login&lt;/div&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
           <mxGeometry x="520" y="719.5" width="170" height="20" as="geometry" />
         </mxCell>
         <mxCell id="FqUW4puc8MzxNFa7fC7m-3" value="Quick Links" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
           <mxGeometry x="1690" y="699.5" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="FqUW4puc8MzxNFa7fC7m-4" value="Home&lt;div&gt;Cartpage&lt;/div&gt;&lt;div&gt;Login&lt;/div&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+        <mxCell id="FqUW4puc8MzxNFa7fC7m-4" value="Home&lt;div&gt;Cartpage&lt;/div&gt;&lt;div&gt;About Us&lt;/div&gt;&lt;div&gt;Login&lt;/div&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
           <mxGeometry x="1690" y="719.5" width="170" height="20" as="geometry" />
         </mxCell>
       </root>
