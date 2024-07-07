@@ -227,7 +227,7 @@ button:hover {
 }
 
 .car-image img {
-    width: 50%; 
+    width: 70%; 
     height: auto; 
     display: block; 
     margin-top: 5%; 
@@ -235,11 +235,12 @@ button:hover {
 }
 
 .car-info {
-    padding: 20px;
-    text-align: right;
-    display: block; 
+    padding: 10px;
+    text-align: left;
+    display: block;
+    width: 50%;
+    margin-right: 2.5%;
 }
-
 
 
 .car-card img {
@@ -247,6 +248,11 @@ button:hover {
     height: 200px; 
     object-fit: cover; 
     display: block;
+}
+
+.rent-button{
+    width: 90%;
+    margin-left: 7.5%;
 }
 
 
