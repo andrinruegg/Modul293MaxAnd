@@ -1,131 +1,159 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #02010A; 
-    color: #FFFFFF; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #02010a;
+  color: #ffffff;
 }
 
 .header {
     background-color: #04020f;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000; 
+    padding: 10px 0; 
 }
 
 .header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .header li {
-    margin: 0 20px; 
+  margin: 0 20px;
 }
 
 .header a {
-    text-decoration: none;
-    color: #FFA500; 
-    font-weight: bold;
-    font-size: 18px; 
+  text-decoration: none;
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .header a:hover {
-    color: #FFD700; 
+  color: #ffd700;
 }
 
 .main-content {
     text-align: center;
-    padding: 100px 20px 50px 20px; 
+    padding: 50px 20px;
     position: relative;
     z-index: 1;
 }
 
 .main-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("koenigsegg.jpg");
-    background-size: cover;
-    opacity: 0.2;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("koenigsegg.jpg");
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -1;
 }
 
 .main-content h1 {
-    font-size: 48px;
-    color: #FFA500; 
-    margin-bottom: 20px;
+  font-size: 48px;
+  color: #ffa500;
+  margin-bottom: 20px;
 }
 
 .main-content p {
-    font-size: 18px;
-    margin-bottom: 40px;
-    max-width: 600px;
-    margin: 0 auto;
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .carousel {
-    text-align: center;
-    padding: 20px 0;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 40px auto;
+  text-align: center;
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
 }
 
 .carousel-inner {
-    display: flex;
-    width: 300%;
-    animation: slide 15s infinite;
+  display: flex;
+  width: 300%;
+  animation: slide 15s infinite;
 }
 
 .carousel img {
-    width: 33.33%;
-    height: auto;
-    opacity: 50%;
+  width: 33.33%;
+  height: auto;
+  opacity: 50%;
+}
+
+.image-grid {
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+.image-container {
+  text-align: center;
+}
+img {
+  width: 400px;
+  height: auto;
+  display: block;
+  border-radius: 14%;
 }
 
 @keyframes slide {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(0); }
-    25% { transform: translateX(-33.33%); }
-    45% { transform: translateX(-33.33%); }
-    50% { transform: translateX(-66.66%); }
-    70% { transform: translateX(-66.66%); }
-    75% { transform: translateX(0); }
-    100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-33.33%);
+  }
+  45% {
+    transform: translateX(-33.33%);
+  }
+  50% {
+    transform: translateX(-66.66%);
+  }
+  70% {
+    transform: translateX(-66.66%);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #04020f;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #04020f;
 }
 
 .footer .social-media {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .footer .social-media p {
-    margin-bottom: 10px;
-    font-size: 18px;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .footer .social-icons a {
-    margin: 0 10px;
-    display: inline-block;
+  margin: 0 10px;
+  display: inline-block;
 }
 
 .footer .social-icons img {
-    width: 24px; 
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .login-container {
