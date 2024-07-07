@@ -25,12 +25,14 @@
             <h2>Please Register</h2>
             <form>
                 <div class="input-group">
-                    <input type="radio" id="gender-m" name="gender" value="m" required>
                     <label for="gender-m">Male</label>
-                    <input type="radio" id="gender-w" name="gender" value="w" required>
+                    <input type="radio" id="gender-m" name="gender" value="m" required>
+                    
                     <label for="gender-w">Female</label>
-                    <input type="radio" id="gender-d" name="gender" value="d" required>
+                    <input type="radio" id="gender-w" name="gender" value="w" required>
+                    
                     <label for="gender-d">Other</label>
+                    <input type="radio" id="gender-d" name="gender" value="d" required>
                 </div>
                 <div class="input-group">
                     <label for="First name">First name</label>
@@ -71,8 +73,8 @@
                     </select>
                 </div>
                 <div class="input-group">
-                    <input type="checkbox" id="datenschutz" name="datenschutz" required>
                     <label for="privacy-policy">I accept the privacy policy</label>
+                    <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
                 </div>
                 <button type="submit">Register</button>
             </form>
