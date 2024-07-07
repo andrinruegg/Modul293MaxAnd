@@ -221,6 +221,27 @@ button:hover {
     display: block;
 }
 
+.car-details {
+    display: flex; 
+    align-items: start; 
+}
+
+.car-image img {
+    width: 50%; 
+    height: auto; 
+    display: block; 
+    margin-top: 5%; 
+    margin-left: 5%;
+}
+
+.car-info {
+    padding: 20px;
+    text-align: right;
+    display: block; 
+}
+
+
+
 .car-card img {
     width: 100%;
     height: 200px; 
