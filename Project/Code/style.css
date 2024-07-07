@@ -278,3 +278,11 @@ button:hover {
     border-radius: 14%;
     object-fit: cover;
 }
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  margin-top: 5%;
+}
