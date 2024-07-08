@@ -246,6 +246,11 @@ button:hover {
     margin-right: 2.5%;
 }
 
+.rent-button{
+    width: 90%;
+    margin-left: 7.5%;
+}
+
 .car-card h3 {
     margin: 10px 0;
     color: #FFA500;
