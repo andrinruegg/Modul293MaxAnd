@@ -76,7 +76,6 @@ body {
     color: #FFD700; 
 }
 
-
 .carousel {
     text-align: center;
     padding: 20px 0;
@@ -152,7 +151,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 90%;
-    max-width: 300px;
+    max-width: 500px;
     text-align: center;
 }
 
@@ -185,7 +184,7 @@ body {
 }
 
 button {
-    width: 100%;
+    width: 104%;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -262,6 +261,10 @@ button:hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
+.forgot-password {
+    margin-top: 30px;
+}
+
 .image-grid {
     display: flex;
     flex-wrap: wrap;
@@ -288,7 +291,7 @@ button:hover {
     color: #FFD700;
 }
 
-/* Media Queries */
+
 @media (max-width: 768px) {
     .header a {
         font-size: 16px; 
@@ -308,7 +311,13 @@ button:hover {
 
     .login-box {
         width: 90%;
+        margin-right: 2%;
     }
+
+    .register-input-group {
+        margin-left: -2%;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -331,5 +340,225 @@ button:hover {
     .carousel img {
         width: 100%;
         height: auto;
+    }
+
+    .register-input-group {
+        margin-left: -2%;
+    }
+}
+
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+}
+
+.register-box {
+    background-color: #04020f;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.register-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #FFA500;
+}
+
+.register-input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.register-input-group input,
+.register-input-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.register-input-group input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.register-button {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFA500;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5%;
+}
+
+.sizeofdropdown {
+    width: 103%;
+}
+
+.register-button:hover {
+    background-color: #FFD700;
+}
+
+.register-input-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.register-input-row .register-input-group {
+    flex: 1;
+    min-width: 45%;
+}
+
+.register-input-group-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: none;
+    width: 100%;
+}
+
+/* Media Queries for Register Page */
+@media (min-width: 1024px) {
+    .register-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .register-box h2 {
+        margin-bottom: 40px;
+    }
+
+    .register-box form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .register-box .register-input-group {
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .register-input-row .register-input-group {
+        flex: 1;
+        max-width: 45%;
+    }
+
+    .register-input-row .register-input-group:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .register-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .register-box h2 {
+        margin-bottom: 40px;
+    }
+
+    .register-box form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .register-box .register-input-group {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .register-input-row .register-input-group {
+        flex: 1;
+        max-width: 45%;
+    }
+
+    .register-input-row .register-input-group:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header a {
+        font-size: 16px; 
+    }
+
+    .header ul {
+        margin-top: 1.7%;
+    }
+
+    .main-content h1 {
+        font-size: 32px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+    }
+
+    .register-box {
+        width: 90%;
+    }
+
+    .register-box form {
+        display: block;
+    }
+
+    .register-box .register-input-group {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .register-input-row {
+        display: block;
+    }
+
+    .register-input-row .register-input-group {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header a {
+        font-size: 14px; 
+    }
+
+    .header ul {
+        margin-top: 2%;
+    }
+
+    .main-content h1 {
+        font-size: 24px;
+    }
+
+    .main-content p {
+        font-size: 14px;
     }
 }
