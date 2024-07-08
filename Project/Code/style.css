@@ -231,10 +231,11 @@ button:hover {
 }
 
 .car-image img {
-    width: 100%;
-    height: auto;
+    width: 70%; 
+    height: auto; 
     display: block; 
-    margin: 5%;
+    margin-top: 5%; 
+    margin-left: 5%;
 }
 
 .car-info {
