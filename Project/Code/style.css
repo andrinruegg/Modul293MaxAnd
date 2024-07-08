@@ -58,6 +58,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center; 
+    margin-top:0.7%;
 }
 
 .header li {
@@ -284,6 +285,14 @@ button:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    .header a {
+        font-size: 16px; 
+    }
+
+    .header ul {
+        margin-top: 1.7%;
+    }
+
     .main-content h1 {
         font-size: 32px;
     }
@@ -298,6 +307,14 @@ button:hover {
 }
 
 @media (max-width: 480px) {
+    .header a {
+        font-size: 14px; 
+    }
+
+    .header ul {
+        margin-top: 2%;
+    }
+
     .main-content h1 {
         font-size: 24px;
     }
