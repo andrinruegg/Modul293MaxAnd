@@ -238,9 +238,11 @@ button:hover {
 }
 
 .car-info {
-    padding: 20px;
-    text-align: right;
-    display: block; 
+    padding: 10px;
+    text-align: left;
+    display: block;
+    width: 50%;
+    margin-right: 2.5%;
 }
 
 .car-card h3 {
