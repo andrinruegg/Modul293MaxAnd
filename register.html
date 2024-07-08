@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="jeskoicon.png">
+</head>
+<header>
+    <div class="header">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutpage.html">About</a></li>
+        <li><a href="rentpage.html">Rent</a></li>
+        <li><a href="loginpage.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+    </ul>
+</div>
+</header>
+<body>
+
+    <div class="register-container">
+        <div class="register-box">
+            <h2>Please Register</h2>
+            <form action="loginpage.html" method="get">
+                <div class="register-input-group">
+                    <label for="gender-m">Male</label>
+                    <input type="radio" id="gender-m" name="gender" value="m" required>
+                    
+                    <label for="gender-w">Female</label>
+                    <input type="radio" id="gender-w" name="gender" value="w" required>
+                    
+                    <label for="gender-d">Other</label>
+                    <input type="radio" id="gender-d" name="gender" value="d" required>
+                </div>
+                <div class="register-input-row">
+                    <div class="register-input-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="register-input-group">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+                <div class="register-input-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="register-input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="register-input-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="register-input-group">
+                    <label for="postcode">Postcode</label>
+                    <input type="text" id="postcode" name="postcode" required>
+                </div>
+                <div class="register-input-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="register-input-group">
+                    <div class="sizeofdropdown">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="switzerland">Switzerland</option>
+                        <option value="germany">Germany</option>
+                        <option value="france">France</option>
+                        <option value="austria">Austria</option>
+                        <option value="italy">Italy</option>
+                    </select>
+                </div>
+            </div>
+                <div class="register-input-group register-input-group-checkbox">
+                    <label for="privacy-policy">I accept the privacy policy</label>
+                    <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                </div>
+                <button class="register-button" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
