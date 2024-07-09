@@ -1,0 +1,558 @@
+$body-bg-color: #02010A;
+$body-text-color: #FFFFFF;
+$header-bg-color: #04020f;
+$accent-color: #FFA500;
+$accent-hover-color: #FFD700;
+$input-bg-color: #222;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: $body-bg-color;
+  color: $body-text-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  text-align: center;
+  padding: 100px 20px 50px 20px;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  margin-top: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("koenigsegg.jpg");
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  h1 {
+    font-size: 48px;
+    color: $accent-color;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  background-color: $header-bg-color;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.7%;
+  }
+
+  li {
+    margin: 0 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $accent-color;
+    font-weight: bold;
+    font-size: 18px;
+
+    &:hover {
+      color: $accent-hover-color;
+    }
+  }
+}
+
+.carousel {
+  text-align: center;
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+
+  .carousel-inner {
+    display: flex;
+    animation: slide 25s infinite;
+
+    img {
+      width: 100%;
+      height: auto;
+      flex-shrink: 0;
+      object-fit: cover;
+      max-width: 100%;
+    }
+  }
+}
+
+@keyframes slide {
+  0%, 20% {
+    transform: translateX(0);
+  }
+  25%, 45% {
+    transform: translateX(-100%);
+  }
+  50%, 70% {
+    transform: translateX(-200%);
+  }
+  75%, 100% {
+    transform: translateX(0);
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: $header-bg-color;
+  margin-top: auto;
+
+  .social-media {
+    margin-top: 20px;
+
+    p {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .social-icons {
+      a {
+        margin: 0 10px;
+        display: inline-block;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 60px);
+  margin-top: -60px;
+
+  .login-box {
+    background-color: $header-bg-color;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: $accent-color;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+      width: 100%;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: $input-bg-color;
+        color: $body-text-color;
+        font-size: 14px;
+      }
+    }
+
+    button {
+      width: 104%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: $accent-color;
+      color: $body-text-color;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $accent-hover-color;
+      }
+    }
+
+    .forgot-password {
+      margin-top: 30px;
+    }
+  }
+}
+
+.car-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+
+  .car-card {
+    background-color: $header-bg-color;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    h3 {
+      margin: 10px 0;
+      color: $accent-color;
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .rent-button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: $accent-color;
+      color: $body-text-color;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+
+      &:hover {
+        background-color: $accent-hover-color;
+      }
+    }
+  }
+
+  .car-details {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    .car-image {
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 5%;
+        margin-left: 5%;
+      }
+    }
+
+    .car-info {
+      padding: 10px;
+      text-align: left;
+      display: block;
+      width: 100%;
+      margin-right: 2.5%;
+    }
+  }
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+
+  .image-container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 14%;
+      object-fit: cover;
+    }
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: $accent-hover-color;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 60px);
+  margin-top: 60px;
+
+  .register-box {
+    background-color: $header-bg-color;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: $accent-color;
+    }
+
+    .register-input-group {
+      margin-bottom: 20px;
+      text-align: left;
+      width: 100%;
+
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: $input-bg-color;
+        color: $body-text-color;
+        font-size: 14px;
+      }
+
+      input[type="radio"] {
+        width: auto;
+        margin-right: 10px;
+      }
+    }
+
+    .register-button {
+      width: 85%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: $accent-color;
+      color: $body-text-color;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-left: 5%;
+
+      &:hover {
+        background-color: $accent-hover-color;
+      }
+    }
+
+    .register-input-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 45px;
+
+      .register-input-group {
+        flex: 1;
+        min-width: 45%;
+      }
+    }
+
+    .register-input-group-checkbox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: none;
+      width: 100%;
+    }
+  }
+}
+
+.sizeofdropdown {
+  width: 103%;
+}
+
+@media (min-width: 1024px) {
+  .register-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .register-input-group {
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .register-input-row {
+      .register-input-group {
+        flex: 1;
+        max-width: 45%;
+      }
+
+      .register-input-group:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .register-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .register-input-group {
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .register-input-row {
+      .register-input-group {
+        flex: 1;
+        max-width: 45%;
+      }
+
+      .register-input-group:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header a {
+    font-size: 16px;
+  }
+
+  .header ul {
+    margin-top: 1.7%;
+  }
+
+  .main-content {
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .login-box,
+  .register-box {
+    width: 90%;
+  }
+
+  .register-box {
+    form {
+      display: block;
+
+      .register-input-group {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    .register-input-row {
+      display: block;
+
+      .register-input-group {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .register-input-group .register-input-group-checkbox {
+    margin-left: -2%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header a {
+    font-size: 14px;
+  }
+
+  .header ul {
+    margin-top: 2%;
+  }
+
+  .main-content {
+    h1 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .register-input-group .register-input-group-checkbox {
+    margin-left: -2%;
+  }
+}
